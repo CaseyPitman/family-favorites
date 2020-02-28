@@ -11,19 +11,59 @@
     <title>Pitman Family Favorites</title>
   </head>
   <body>
-    <div class=".container-fluid" id="page-container">
-        <header id="header"> <!--Background is family pic via CSS-->
-            <h1>Pitman Family Favorites</h1>
-        </header>
+    <div class="container-fluid" id="page-container">
+      <div id="header" class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 id="headline">Pitman Family Favorites</h1>      
+        </div>
+      </div>
         <main id="content-wrapper">
+          <!--Id Cards For Family Members-->
+          <div class="card-deck">
+            <div id="casey-card" class="card">
+              <img id="casey-card-img" class="card-img-top" src="img/casey.jpg" alt="Casey">
+              <div class="card-body">
+                <h4 id="casey-card-name" class="card-title">Casey</h4>
+                <h6 id="casey-card-nick" class="card-subtitle text-muted mb-2">Dad</h6>
+                <button id="casey-card-btn" class="btn btn-info">View Favorites</button>
+              </div>
+            </div>
 
+            <div id="traci-card" class="card">
+              <img id="traci-card-img" class="card-img-top" src="img/traci.jpg" alt="Traci">
+              <div class="card-body">
+                <h4 id="traci-card-name" class="card-title">Traci</h4>
+                <h6 id="traci-card-nick" class="card-subtitle text-muted mb-2">Mom</h6>
+                <button id="traci-card-btn" class="btn btn-info">View Favorites</button>
+              </div>
+            </div>
+          
+            <div id="charlie-card" class="card">
+              <img id="charlie-card-img" class="card-img-top" src="img/charlie.jpg" alt="Charlie">
+              <div class="card-body">
+                <h4 id="charlie-card-name" class="card-title">Charlie</h4>
+                <h6 id="charlie-card-nick" class="card-subtitle text-muted mb-2">Charliepants</h6>
+                <button id="charlie-card-btn" class="btn btn-info">View Favorites</button>
+              </div>
+            </div>
+
+            <div id="lily-card" class="card">
+              <img id="lily-card-img" class="card-img-top" src="img/lily-beth.jpg" alt="Lily Beth">
+              <div class="card-body">
+                <h4 id="lily-card-name" class="card-title">Lily Beth</h4>
+                <h6 id="lily-card-nick" class="card-subtitle text-muted mb-2">WigglyBeth</h6>
+                <button id="lily-card-btn" class="btn btn-info">View Favorites</button>
+              </div>
+            </div>
+          </div>
         </main>
    
     </div>
 
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
