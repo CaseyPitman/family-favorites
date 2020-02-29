@@ -9,7 +9,7 @@ const familyArr=[
     {name: "Casey",
      nickname: "Dad",
      position: "Father",
-     age: "42",
+     age: "41",
      favoriteFood: "Mint Chocolate Chip Ice Cream",
      favoriteBook: "The Stand by Stephen King",
      favoriteMovie: "The Shawshank Redemption",
