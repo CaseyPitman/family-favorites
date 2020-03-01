@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/b0cd4101cb.js" crossorigin="anonymous"></script>
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/main.css">
 
-    <title>Pitman Family Favorites</title>
+    <title>Pitman Files</title>
   </head>
   <body>
     <div class="container-fluid" id="page-container">
       <div id="header" class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 id="headline">Pitman Family Favorites</h1>      
+          <h1 id="headline">Pitman Family Files</h1>      
         </div>
       </div>
         <main id="content-wrapper">
@@ -23,40 +25,35 @@
             <div id="casey-card" class="card">
               <img id="casey-card-img" class="card-img-top" src="img/casey.jpg" alt="Casey">
               <div class="card-body">
-                <h4 id="casey-card-name" class="card-title">Casey</h4>
-                <h6 id="casey-card-nick" class="card-subtitle text-muted mb-2">Dad</h6>
-                <button id="casey-card-btn" class="btn btn-info" data-toggle="modal" data-target="#casey-modal">View Favorites</button>
+                <h3 id="casey-card-name" class="card-title">Casey</h3>
+                <button id="casey-card-btn" class="btn-outline-danger btn" data-toggle="modal" data-target="#casey-modal">View Info</button>
               </div>
             </div>
 
             <div id="traci-card" class="card">
               <img id="traci-card-img" class="card-img-top" src="img/traci.jpg" alt="Traci">
               <div class="card-body">
-                <h4 id="traci-card-name" class="card-title">Traci</h4>
-                <h6 id="traci-card-nick" class="card-subtitle text-muted mb-2">Mom</h6>
-                <button id="traci-card-btn" class="btn btn-info" data-toggle="modal" data-target="#traci-modal">View Favorites</button>
+                <h3 id="traci-card-name" class="card-title">Traci</h3>
+                <button id="traci-card-btn" class="btn-outline-danger btn" data-toggle="modal" data-target="#traci-modal">View Info</button>
               </div>
             </div>
           
             <div id="charlie-card" class="card">
               <img id="charlie-card-img" class="card-img-top" src="img/charlie.jpg" alt="Charlie">
               <div class="card-body">
-                <h4 id="charlie-card-name" class="card-title">Charlie</h4>
-                <h6 id="charlie-card-nick" class="card-subtitle text-muted mb-2">Charliepants</h6>
-                <button id="charlie-card-btn" class="btn btn-info" data-toggle="modal" data-target="#charlie-modal">View Favorites</button>
+                <h3 id="charlie-card-name" class="card-title">Charlie</h3>
+                <button id="charlie-card-btn" class="btn-outline-danger btn"  data-toggle="modal" data-target="#charlie-modal">View Info</button>
               </div>
             </div>
 
             <div id="lily-card" class="card">
               <img id="lily-card-img" class="card-img-top" src="img/lily-beth.jpg" alt="Lily Beth">
               <div class="card-body">
-                <h4 id="lily-card-name" class="card-title">Lily Beth</h4>
-                <h6 id="lily-card-nick" class="card-subtitle text-muted mb-2">WigglyBeth</h6>
-                <button id="lily-card-btn" class="btn btn-info" data-toggle="modal" data-target="#lily-modal">View Favorites</button>
+                <h3 id="lily-card-name" class="card-title">Lily Beth</h3>
+                <button id="lily-card-btn" class="btn-outline-danger btn"  data-toggle="modal" data-target="#lily-modal">View Info</button>
               </div>
             </div>
           </div>
-
           <!-- MODALS -->
           <!--modal container casey-->
           <div class="modal fade" id="casey-modal">
@@ -65,28 +62,20 @@
                 <!-- modal body -->
                 <div class="modal-body">
                   <div class="continer-fluid">
-                    <div class="row">
-                      <div id="casey-modal-about" class="col-6 modal-about">
-                        <h1 class="modal-about-text">Casey</h1>
-                        <h3 class="modal-about-text">a.k.a: Dad</h2>
-                        <h3 class="modal-about-text">Position: Father</h3>
-                        <h3 class="modal-about-text">Age: 41</h3>
-                      </div>                  
-                      <img id="casey-modal-img" class="img rounded col-sm-5" src="img/casey.jpg" alt="Casey">
-                    </div>
-                    <div class="row">
-                      <h2 class="col-sm-12 text-center modal-favorites-title">Favorites</h2>
-                    </div>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <p>Food: Mint Chocolate Chip Ice Cream</p>
-                        <p>Pet: Ringo</p>
-                        <p>Color: Green</p>
-                      </div>
-                      <div class="col-sm-6">
-                        <p>Movie: The Shawshank Redemption</p>
-                        <p>Show: LOST</p>
-                        <p>Book: The Stand by Stephen King</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>  
+                    <div class="row">                      
+                      <img id="casey-modal-img" class="img rounded col-lg-6" src="img/casey.jpg" alt="Casey">
+                      <div id="casey-modal-about" class="col-lg-6 modal-about">
+                        <h1 class="modal-about-name display-3">Casey &nbsp;&nbsp;&nbsp;&nbsp;<i class="icon fas fa-coffee"></i></h1>
+                        <h2 class="modal-about-nickname">a.k.a: Dad</h2>
+                        <h4 class="modal-about-text font-weight-light">Position: Father</h4>
+                        <h4 class="modal-about-text font-weight-light">Birthday: August 22</h4>
+                        <h4 class="modal-about-text font-weight-light">Age: 41</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Food: Ice Cream</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Book: "The Stand" by Stephen King</h4>
+                        </div >                
                      </div>
                     </div>
                   </div>
@@ -95,40 +84,89 @@
             </div>
           </div>
           <!--modal container traci-->
-          <div class="modal" id="traci-modal">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
+          <div class="modal fade" id="traci-modal">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div id="traci-modal-content" class="modal-content">
                 <!-- modal body -->
                 <div class="modal-body">
-                <h1>Traci</h1>
+                  <div class="continer-fluid">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>   
+                    <div class="row">        
+                      <img id="traci-modal-img" class="img rounded col-lg-6" src="img/traci.jpg" alt="Traci">
+                      <div id="traci-modal-about" class="col-lg-6 modal-about">
+                        <h1 class="modal-about-name display-3">Traci &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i class="icon fas fa-mountain"></i></h1>
+                        <h2 class="modal-about-nickname">a.k.a: Mom</h2>
+                        <h4 class="modal-about-text font-weight-light">Position: Mother</h4>
+                        <h4 class="modal-about-text font-weight-light">Birthday: March 15</h4>
+                        <h4 class="modal-about-text font-weight-light">Age: 35</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Food: Mac & Cheese</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Book: "Of Human Bondage" by Somerset Maugham</h4>
+                        </div >                
+                     </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           <!--modal container charlie-->
-          <div class="modal" id="charlie-modal">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
+          <div class="modal fade" id="charlie-modal">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div id="charlie-modal-content" class="modal-content">
                 <!-- modal body -->
                 <div class="modal-body">
-                <h1>Charlie</h1>
+                  <div class="continer-fluid">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>  
+                    <div class="row">                      
+                      <img id="charlie-modal-img" class="img rounded col-lg-6" src="img/charlie.jpg" alt="Traci">
+                      <div id="charlie-modal-about" class="col-lg-6 modal-about">
+                        <h1 class="modal-about-name display-3">Charlie &nbsp;&nbsp;&nbsp;<i class="icon fas fa-book-reader"></i></h1>
+                        <h2 class="modal-about-nickname">a.k.a: Charliepants</h2>
+                        <h4 class="modal-about-text font-weight-light">Position: Child</h4>
+                        <h4 class="modal-about-text font-weight-light">Birthday: September 26</h4>
+                        <h4 class="modal-about-text font-weight-light">Age: 8</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Food: Pizza</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Book: Percy Jackson Series by Rick Riordan</h4>
+                        </div >                
+                     </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <!--modal container lily beth-->
-          <div class="modal" id="lily-modal">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
+          <!--modal container Lily Beth-->
+          <div class="modal fade" id="lily-modal">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+              <div id="lily-modal-content" class="modal-content">
                 <!-- modal body -->
                 <div class="modal-body">
-                <h1>Lily Beth</h1>
+                  <div class="continer-fluid">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>  
+                    <div class="row">                      
+                      <img id="lily-modal-img" class="img rounded col-lg-6" src="img/lily-beth.jpg" alt="Lily Beth">
+                      <div id="lily-modal-about" class="col-lg-6 modal-about">
+                        <h1 class="modal-about-name display-3">Lily Beth &nbsp;<i class="icon fas fa-horse"></i></h1>
+                        <h2 class="modal-about-nickname">a.k.a: WigglyBeth</h2>
+                        <h4 class="modal-about-text font-weight-light">Position: Child</h4>
+                        <h4 class="modal-about-text font-weight-light">Birthday: February 13</h4>
+                        <h4 class="modal-about-text font-weight-light">Age: 5</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Food: Rice</h4>
+                        <h4 class="modal-about-text font-weight-light">Favorite Book: "My Little Pony: Sharing is Caring"</h4>
+                        </div >                
+                     </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </main>
-    </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30=" crossorigin="anonymous"></script>
